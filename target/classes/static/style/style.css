@@ -1,0 +1,59 @@
+body {
+  font: 75%/1.6 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+  whidth:50%;
+}
+
+#playlistTable{
+	text-align:center;
+	whidt: 50%;
+	margin:auto;
+}
+table {
+  text-align:center;
+  border-collapse: collapse;
+  width: 50%;
+  border: 1px solid #666;
+  margin:2px auto;
+  padding: auto;
+}
+thead {
+  background: #ccc url(https://www.devfuria.com.br/html-css/tabelas/bar.gif) repeat-x left center;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+thead tr:hover {
+  background-color: transparent;
+  color: inherit;
+}
+tr:nth-child(even) {
+    background-color: #edf5ff;
+    color:black;
+}
+tr:hover {
+  background-color:#3d80df;
+  color: black;
+}
+th {
+  font-weight: normal;
+  text-align: center;
+}
+th, td {
+  padding: 0.1em 1em;
+}
+
+.title{
+	text-align:center;
+	color:blue;
+}
+
+.link{
+	float:right;
+	text-decoration:none;
+	text-align: right;
+}
+
+a:link { 
+text-decoration:none; 
+} 
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Atere o produto</title>
+</head>
+<body>
+
+	<h1 style="color:blue;text-align:center;" >Editar produto</h1>
+	<form class="contato-container" action="#" th:action="@{/save}"
+		th:object="${product}" method="post">
+
+
+		<br>
+		<table id="playlistTable">
+			<td>Produto ID</td>
+			<td><input type="text" th:field="*{id}" readonly /></td>
+
+			<td>Nome do produto</td>
+			<td><input type="text" th:field="*{nome}" /></td>
+
+
+			<td>Preço</td>
+			<td><input type="text" th:field="*{price}" /></td>
+
+
+			<td>Marca</td>
+			<td><input type="text" th:field="*{brand}" /></td>
+
+
+
+			<td>Criado</td>
+			<td><input type="text" th:field="*{madein}" /></td>
+				
+				<td> <input type="submit" value="Alterar" /> </td>
+		</table>
+
+		
+
+	</form>
+
+
+</body>
+</html>

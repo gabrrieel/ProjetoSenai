@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Cadastro de produtos</title>
+<link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+	<h1 class="title">Cadastre um novo produto</h1>
+
+
+	<form action="#" th:action="@{/save}" th:object="${product}"
+		method="post">
+
+
+		<br>
+		<table id="playlistTable">
+			<th>Nome</th>
+			<td><input type="text" th:field="*{nome}" /></td>
+
+
+			<th>Preço</th>
+			<td><input type="text" th:field="*{price}" /></td>
+
+
+			<th>Marca</th>
+			<td><input type="text" th:field="*{brand}" /></td>
+
+
+
+			<th>Criado</th>
+			<td><input type="text" th:field="*{madein}" /></td>
+			
+			<td><input type="submit" value="Cadastrar" /></td>
+			
+
+		</table>
+
+	</form>
+
+
+</body>
+</html>
